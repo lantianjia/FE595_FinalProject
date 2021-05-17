@@ -13,7 +13,6 @@
 # Financial News Search and Sentiment Analysis API
 This API allows users to search on stock ticker and will return the latest news, categorized and scored based
 on sentiment analysis.
-
 The goal is to help investors quickly identify important news for their investment decisions.
 
 There are 5 basic parts to the tool:
