@@ -62,6 +62,7 @@ The API will return relevant entries for the given symbol along with the followi
 For example, type in ^GSPC to know the recent news for the S&P 500.
 
 NOTE: A search will return a blank list if there is currently no data for a given symbol in the database.
+
 Below are some good stock abbreviations to test this API:
 - ^GSPC
 - COMP
