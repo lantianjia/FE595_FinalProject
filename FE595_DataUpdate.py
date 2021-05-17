@@ -357,7 +357,13 @@ DbSession = sessionmaker(bind=engine)
 session = DbSession()
 
 
-df.to_sql('YahooNews', engine, schema='mydb', index = False, index_label=None, if_exists='append')
+all_df_temp = engine.execute("SELECT * from YahooNews").fetchall()
+all_df = pd.DataFrame(all_df_temp, columns=['abbreviation','time','title','links','keyword','attitude','classification'])
+new_df = df.loc[~df['links'].isin(all_df['links'])]
+new_df = new_df.reset_index()
+del new_df['index']
+
+new_df.to_sql('YahooNews', engine, schema='mydb', index = False, index_label=None, if_exists='append')
 session.commit()
 session.close()
 
