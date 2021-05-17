@@ -1,12 +1,14 @@
 # Final project in FE595-Financial Technology
 # Group 1
-Lantian (Laney) Jia, Wenbo (Brian) Yu, Daniel (Dan) Bachalis
+- Lantian (Laney) Jia
+- Wenbo (Brian) Yu
+- Daniel (Dan) Bachalis
 
 # Responsibilities:
 - Lantian was responsible for NLP analysis and hosted on AWS
-- Wenbo created the flask and HTML
-- Dan took the charge of scraping Yahoo News and update to SQL
-- We all were responsible for reviewing each other's code, testing and troubleshooting.
+- Wenbo was responsible for the flask API and HTML code
+- Dan was responsible for scraping Yahoo News and updating the database in SQL
+- All were responsible for reviewing each other's code, testing and troubleshooting
 
 # Financial News Search and Sentiment Analysis API
 This API allows users to search on stock ticker and will return the latest news, categorized and scored based
