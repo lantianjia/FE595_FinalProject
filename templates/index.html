@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Query</title>
+</head>
+<body>
+    <div>
+        <form action="news" method="post">
+            <input name='content' type="text">
+            <input type="submit">
+        </form>
+    </div>
+    <div>
+        {% if result %}
+            <p>Stock News Analysis:</p>
+            <table border="1">
+                {% for i in result %}
+                    {% if loop.first %}
+                        <tr>
+                            {% for j in i %}
+                                <th>
+                                    {{ j }}
+                                </th>
+                            {% endfor %}
+                        </tr>
+                    {% else %}
+                        <tr>
+                            {% for j in i %}
+                                <td>
+                                    {{ j }}
+                                </td>
+                            {% endfor %}
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+        {% endif %}
+    </div>
+</body>
+</html>
