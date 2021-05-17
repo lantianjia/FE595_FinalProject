@@ -96,7 +96,7 @@ if __name__ == '__main__':
         result = result.append([abbr])
         
     YahooNews_info = result
-    YahooNews_info.columns = ['abbr','time','title','news']
+    YahooNews_info.columns = ['abbreviation','time','title','news']
 
 
 YahooNews_info = YahooNews_info.reset_index()
@@ -104,10 +104,10 @@ YahooNews_info = pd.concat([YahooNews_info, YahooNews_links], axis=1)
 del YahooNews_info['index']
 
 
-YahooNews_info['abbr'] = [' '.join(i) for i in YahooNews_info['abbr']]
+YahooNews_info['abbreviation'] = [' '.join(i) for i in YahooNews_info['abbreviation']]
 YahooNews_info['time'] = [' '.join(i) for i in YahooNews_info['time']]
 YahooNews_info['title'] = [' '.join(i) for i in YahooNews_info['title']]
-YahooNews_info = YahooNews_info[~YahooNews_info['abbr'].isin([""])]
+YahooNews_info = YahooNews_info[~YahooNews_info['abbreviation'].isin([""])]
 
 
 
