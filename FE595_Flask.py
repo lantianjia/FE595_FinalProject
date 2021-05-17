@@ -2,6 +2,7 @@ import pymysql.cursors
 from sqlalchemy import create_engine
 from flask import Flask, render_template, request
 import csv
+import markdown
 
 # AWS Database Connection
 host = "18.116.165.240"
@@ -46,6 +47,14 @@ def result():
     content = request.form.get('content')
     search_res = search(content=content)
     return render_template('index.html',result=search_res)
+
+@app.route('/help', methods=['GET'])
+def help():
+    "Return the README file contents by converting and displaying the README file in HTML"
+    with open('README.md', 'r') as f:
+        text = f.read()
+        html = markdown.markdown(text)
+    return html
 
 if __name__ == '__main__':
     res_list = read_sql(engine.execute("SELECT * from YahooNews"))
