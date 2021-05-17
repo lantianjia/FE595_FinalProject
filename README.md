@@ -40,6 +40,7 @@ There are 5 basic parts to the tool:
 # How to use this API:
 
 Call the API via the following URL:
+
 18.116.165.240
 
 # Add the following to the base &lt;URL&gt; above to access additional services:
@@ -67,4 +68,5 @@ Some good stock abbreviation to test the API:
 - AAPL ETSY
 
 2. &lt;URL&gt;/help
+
 Displays this README file.
