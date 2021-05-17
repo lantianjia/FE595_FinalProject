@@ -12,4 +12,7 @@ Note:
 
 
 File DataUpdate.py is to support update the database. 10 minutes running to scrap approximate recent 100 news from Yahoo Finance.
+File Flask.py is running on AWS EC2 instances.
+
+
 
