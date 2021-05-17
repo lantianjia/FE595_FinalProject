@@ -7,7 +7,7 @@
 - Dan took the charge of scraping Yahoo News and update to SQL
 - We all were responsible for reviewing each other's code, testing and troubleshooting.
 
-# Financial News Search and Sentiment Analysis
+# Financial News Search and Sentiment Analysis API
 This API allows users to search on stock ticker and will return the latest news, categorized and scored based
 on sentiment analysis.
 The goal is to help investors quickly identify important news for their investment decisions.
@@ -39,12 +39,13 @@ There are 5 basic parts to the tool:
 
 # How to use this API:
 
-# Call the API via the following URL:
+Call the API via the following URL:
 18.116.165.240
 
 # Add the following to the base &lt;URL&gt; above to access additional services:
 
 1. &lt;URL&gt;
+
 On the main screen, enter a ticker symbol into the search field and click [submit] or press 'Enter' on the keyboard.
 The API will return relevant entries for the given symbol along with the following:
 - Abbreviation: i.e. ticker symbol
@@ -54,7 +55,8 @@ The API will return relevant entries for the given symbol along with the followi
 - Attitude: The sentiment analysis score for the article (pos = positive sentiment, neg = negative sentiment)
 - Classification: The category assigned to the article from the NLP module (e.g. Commodities, Economy, Policy, etc.)
 
-For example, type in ^GSPC to know the recent news for the S&P 500
+For example, type in ^GSPC to know the recent news for the S&P 500.
+
 NOTE: A search will return a blank list if there is currently no data for a given symbol in the database.
 Some good stock abbreviation to test the API:
 - ^GSPC
