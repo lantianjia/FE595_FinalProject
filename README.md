@@ -1,6 +1,7 @@
 # Final project in FE595-Financial Technology
 # Group 1
-# Lantian (Laney) Jia, Wenbo (Brian) Yu, Daniel (Dan) Bachalis
+Lantian (Laney) Jia, Wenbo (Brian) Yu, Daniel (Dan) Bachalis
+
 # Responsibilities:
 - Lantian was responsible for NLP analysis and hosted on AWS
 - Wenbo created the flask and HTML
@@ -10,6 +11,7 @@
 # Financial News Search and Sentiment Analysis API
 This API allows users to search on stock ticker and will return the latest news, categorized and scored based
 on sentiment analysis.
+
 The goal is to help investors quickly identify important news for their investment decisions.
 
 There are 5 basic parts to the tool:
