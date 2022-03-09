@@ -1,6 +1,6 @@
 # Sentiment Analysis and Financial Technology
 
-# Financial News Search and Sentiment Analysis API
+## Financial News Search and Sentiment Analysis API
 This API allows users to search on stock ticker and will return the latest news, categorized and scored based
 on sentiment analysis.
 The goal is to help investors quickly identify important news for their investment decisions.
@@ -44,13 +44,13 @@ There are 5 basic parts to the tool:
 
     Created via the sqlite3 package.
 
-# How to use this API:
+## How to use this API:
 
 Call the API via the following URL:
 
 18.116.165.240
 
-# Add the following to the base &lt;URL&gt; above to access additional services:
+## Add the following to the base &lt;URL&gt; above to access additional services:
 
 1. &lt;URL&gt;
 
