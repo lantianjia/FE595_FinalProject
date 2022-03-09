@@ -48,7 +48,7 @@ There are 5 basic parts to the tool:
 
 Call the API via the following URL:
 
-18.116.165.240
+18.116.165.240 (Not in service since 2021.8)
 
 ## Add the following to the base &lt;URL&gt; above to access additional services:
 
