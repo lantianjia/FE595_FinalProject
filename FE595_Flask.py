@@ -6,9 +6,9 @@ import markdown
 
 # AWS Database Connection
 host = "18.116.165.240"
-port = "33060"
+port = ******
 username = "root"
-password = "CBykDq08SZ"
+password = ****
 database = "mydb"
 engine = create_engine(f"mysql+pymysql://{username}:{password}@{host}:{port}/{database}?charset=utf8")
 
